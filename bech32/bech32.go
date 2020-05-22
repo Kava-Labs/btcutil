@@ -18,7 +18,7 @@ var gen = []int{0x3b6a57b2, 0x26508e6d, 0x1ea119fa, 0x3d4233dd, 0x2a1462b3}
 func Decode(bech string) (string, []byte, error) {
 	// The bech32 string must be at least 8 characters, since it needs a non-empty HRP,
 	// a separator, and a 6 character checksum.
-	if len(bech) < 8 || len(bech) > 1024 {
+	if len(bech) < 8 || len(bech) > 2048 {
 		return "", nil, fmt.Errorf("invalid bech32 string length %d",
 			len(bech))
 	}

@@ -27,7 +27,7 @@ func TestBech32(t *testing.T) {
 		{"split1cheo2y9e2w", false}, // invalid character (o) in data part
 		{"split1a2y9w", false},      // too short data part
 		{"1checkupstagehandshakeupstreamerranterredcaperred2y9e3w", false}, // empty hrp
-		//{"11qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqsqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqc8247j", false}, // too long
+		// {"11qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqsqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqc8247j", false}, // too long
 	}
 
 	for _, test := range tests {
